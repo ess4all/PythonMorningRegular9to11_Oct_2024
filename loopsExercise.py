@@ -98,9 +98,7 @@ for each in range(1,6):
         print(i,end="")
    
    '''
-
-
-
+'''
 x = 1
 for i in range(1,6):
     # col
@@ -111,20 +109,77 @@ for i in range(1,6):
             print("1",end="")    
             #print(x,end="")
         x = x+1
-    
+    print()
+'''
+'''
+*   *
+*   *
+*****
+*   *
+*   *
+for i in range(1,6):
+    for j in range(1,6):
+        if j in (1,5) or i==3:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+'''
+'''
+for i in range(1,8):
+    for j in range(1,6):
+        if i in (1,4,7) or (j == 1) or (j==5):
+            if (j==5) and i in (1,4,7):
+                print(" ",end="")
+            else:
+                print("*",end="")
+        else:
+            print(" ",end="")
     print()
 
 
+'''
+'''
+for i in range(1,8):
+    for j in range(1,6):
+        if i in (1,4) or (j == 1) or (j==5):
+            if (i==1) and j in (1,5):
+                print(" ",end="")
+            else:
+                print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+
+'''
+'''
+for i in range(1,8):
+    for j in range(1,8):
+        if i in (1,7) or i== 8-j:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()        
 
 
-
-
-
-
-
-
-
-
+'''
+for i in range(1,8):
+    for j in range(1,6):
+        if i in (1,4) or j in (1,5) :
+            if (j==1 or i in (1,4)) or (j==5 and i in (2,3,7)):
+                if i in (1,4) and j==5:
+                    print(" ",end="")
+                else:
+                   print("*",end="")
+            elif j==5 and i in (1,4):
+                print(" ",end="")
+            else:
+                print(" ",end="")
+        elif i==j+2 :
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
 
 
 
